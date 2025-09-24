@@ -132,46 +132,6 @@
   opacity: 0.05;
 }
 
-.newspaper-header {
-  font-family: "Times New Roman", serif;
-  border-top: 3px solid #b30000;
-  border-bottom: 3px solid #b30000;
-  position: relative;
-}
-
-.newspaper-header::before,
-.newspaper-header::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: #b30000;
-}
-
-.newspaper-header::before {
-  top: 6px;
-}
-
-.newspaper-header::after {
-  bottom: 6px;
-}
-
-.kolam-frame {
-  border: 3px solid #b30000;
-  border-radius: 8px;
-  position: relative;
-  background: white;
-}
-
-.kolam-frame::before {
-  content: "";
-  position: absolute;
-  inset: 6px;
-  border: 1px solid #b30000;
-  border-radius: 4px;
-}
-
 .feature-icon {
   width: 60px;
   height: 60px;
@@ -183,4 +143,24 @@
   color: white;
   font-size: 24px;
   margin: 0 auto 1rem;
+}
+
+/* Custom styles for Kolam For The Day section */
+.newspaper-header {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kolam-frame {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 8px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.kolam-frame:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
 }

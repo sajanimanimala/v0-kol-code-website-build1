@@ -27,8 +27,7 @@ export default function FeaturesPage() {
 
   const handleGenerateKolam = () => {
     if (prompt.trim()) {
-      // Simulate kolam generation
-      setGeneratedKolam("/images/kolam-day.png")
+      setGeneratedKolam("/generated-kolam-pattern.jpg")
     }
   }
 
@@ -62,7 +61,7 @@ export default function FeaturesPage() {
 
               {uploadedImage && (
                 <div className="space-y-4">
-                  <div className="kolam-frame p-4">
+                  <div className="border-2 border-primary rounded-lg p-4 bg-white">
                     <img
                       src={uploadedImage || "/placeholder.svg"}
                       alt="Uploaded Kolam"
@@ -113,7 +112,7 @@ export default function FeaturesPage() {
 
               {generatedKolam && (
                 <div className="space-y-4">
-                  <div className="kolam-frame p-4">
+                  <div className="border-2 border-primary rounded-lg p-4 bg-white">
                     <img
                       src={generatedKolam || "/placeholder.svg"}
                       alt="Generated Kolam"

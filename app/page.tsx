@@ -1,39 +1,60 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react"
 
 export default function HomePage() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <div className="min-h-screen">
       {/* Background overlay */}
       <div className="fixed inset-0 kolam-background pointer-events-none" />
 
-      {/* Kolam For The Day Banner */}
-      <section className="bg-white py-8 relative z-10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="newspaper-header text-center py-4 mb-8">
-            <h1 className="text-3xl font-bold text-primary mb-2">KOLAM FOR THE DAY</h1>
-            <div className="text-sm text-muted-foreground">
-              {new Date().toLocaleDateString("en-US", {
-                weekday: "long",
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+      {/* Kolam For The Day Section */}
+      <section className="newspaper-header bg-primary text-white py-4 relative z-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold">Kolam For The Day</h2>
+              <p className="text-white/90 mt-1">Try out this kolam today</p>
+            </div>
+            <div className="kolam-frame">
+              <img
+                src="/images/kolam-day.png"
+                alt="Today's featured kolam pattern"
+                className="w-20 h-20 object-contain cursor-pointer hover:opacity-80 transition-opacity"
+                onClick={() => setIsModalOpen(true)}
+              />
             </div>
           </div>
-
-          <div className="flex justify-center mb-6">
-            <div className="kolam-frame p-6">
-              <img src="/images/kolam-day.png" alt="Today's Kolam" className="w-64 h-64 object-contain" />
-            </div>
-          </div>
-
-          <p className="text-center text-lg text-muted-foreground italic">
-            "A daily celebration of heritage through art."
-          </p>
         </div>
       </section>
+
+      {/* Modal for full-size image view */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <div className="relative max-w-4xl max-h-[90vh] p-4">
+            <img
+              src="/images/kolam-day.png"
+              alt="Today's featured kolam pattern - Full view"
+              className="max-w-full max-h-full object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-2 right-2 text-white bg-black bg-opacity-50 rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75 transition-colors"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Hero Section */}
       <section className="py-20 relative z-10">
