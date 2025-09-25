@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             <div className="flex-1">
               <h2 className="text-2xl font-bold">Kolam For The Day</h2>
-              <p className="text-white/90 mt-1">Try out this kolam today</p>
+              <p className="text-white/90 mt-1">This kolam design symbolizes the cyclical nature  of life where beginnings and endings are seamlessly connected.</p>
             </div>
             <div className="kolam-frame">
               <img
@@ -60,7 +60,7 @@ export default function HomePage() {
       <section className="py-20 relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
-            <img src="/images/kolamlogo.png" alt="Kolam Samskriti" className="h-24 w-auto mx-auto mb-6" />
+            <img src="/images/kolam-samskriti-logo.png" alt="Kolam Samskriti" className="h-24 w-auto mx-auto mb-6" />
           </div>
 
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">

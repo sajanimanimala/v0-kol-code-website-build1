@@ -14,9 +14,9 @@ export default function AboutPage() {
           <CardContent className="p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-                Kolam Samskriti is born from a vision to preserve the cultural essence of Kolams while embracing technology. We
-                blend art, mathematics, and heritage into an innovative platform that connects tradition with today's
-                generation.
+                Kolam Samskriti is born from a vision to preserve the cultural essence of Kolams while embracing
+                technology. We blend art, mathematics, and heritage into an innovative platform that connects tradition
+                with today's generation.
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 mt-12">

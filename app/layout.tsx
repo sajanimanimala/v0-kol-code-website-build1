@@ -18,7 +18,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "KolCode - Where tradition meets technology",
+  title: "Kolam Samskriti - Where tradition meets technology",
   description: "Where tradition meets technology in the language of Kolams",
   generator: "v0.app",
 }
