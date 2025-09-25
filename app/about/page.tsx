@@ -14,7 +14,7 @@ export default function AboutPage() {
           <CardContent className="p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-                KolCode is born from a vision to preserve the cultural essence of Kolams while embracing technology. We
+                Kolam Samskriti is born from a vision to preserve the cultural essence of Kolams while embracing technology. We
                 blend art, mathematics, and heritage into an innovative platform that connects tradition with today's
                 generation.
               </p>
