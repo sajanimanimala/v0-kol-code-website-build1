@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             <div className="flex-1">
               <h2 className="text-2xl font-bold">Kolam For The Day</h2>
-              <p className="text-white/90 mt-1">This kolam design symbolizes the cyclical nature  of life where beginnings and endings are seamlessly connected.</p>
+              <p className="text-white/90 mt-1">This kolam design symbolizes the cyclical nature  of life where beginnings and endings are seamlessly connected.Mathematically, it is based on symmetry, topology (continuous loops around lattice points), and algorithmic curve drawing using Eulerian paths.</p>
             </div>
             <div className="kolam-frame">
               <img
