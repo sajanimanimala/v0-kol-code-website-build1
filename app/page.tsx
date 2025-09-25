@@ -60,7 +60,7 @@ export default function HomePage() {
       <section className="py-20 relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
-            <img src="/images/Screenshot 202" alt="Kolam Samskriti" className="h-24 w-auto mx-auto mb-6" />
+            <img src="/images/kolamlogo.png" alt="Kolam Samskriti" className="h-24 w-auto mx-auto mb-6" />
           </div>
 
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
